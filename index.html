@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>SIGA LIVRE</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            max-width: 400px;
+            margin: 0 auto;
+            line-height: 1.8em;
+        }
+        h1 {
+            text-align: center;
+            font-size: 1em;
+            margin: 2em;
+        }
+        a.bookmarklet {
+            display: block;
+            background-color: cadetblue;
+            color: white;
+            font-size: 2em;
+            text-decoration: none;
+            padding: 0.8em;
+            text-align: center;
+            border-radius: 10px;
+            margin: 1em 0;
+        }
+        article {
+
+        }
+        h2 {
+            margin: 0 0 0.7em 0;
+            font-size: 1.2em;
+        }
+        ol {
+            margin-top: 0;
+            padding: 1em;
+        }
+        li {
+            margin-bottom: 0.5em;
+        }
+        footer {
+            text-align: center;
+            border-top: 1px solid lightgray;
+            padding-top: 1em;
+            margin-top: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>SSIGAA LIVRE Bookmarket</h1>
+            <a draggable="true" class="bookmarklet" href="javascript:(function()%7B(function() %7B(function() %7Bif (window.location.hostname !%3D%3D 'si3.ufc.br') %7Bwindow.location.href %3D 'https%3A%2F%2Fsi3.ufc.br%2Fsigaa%2FverTelaLogin.do'%3B%7D else %7Bfor (i %3D 0%3B i < document.getElementsByTagName('input').length%3B i %2B%3D 1) %7Bif (document.getElementsByTagName('input')%5Bi%5D.name.search('user%5C.(login%7Csenha)%7Centrar') > -1) %7Bdocument.getElementsByTagName('input')%5Bi%5D.removeAttribute('disabled')%3B%7D%7D%7D%7D())%7D)()%7D)()">SIGAA LIVRE</a>
+        </header>
+        <article>
+            <h2>O que é?</h2>
+            <p>SIGAA livre é um simples <a href="https://pt.wikipedia.org/wiki/Bookmarklet" target="_blank">bookmarklet</a> que ajuda você a acessar o SIGAA bloqueado para navegadores que não sejam o Firefox, trazendo assim, facilidade e praticidade.</p>
+            <h2>Como utilizar?</h2>
+            <ol>
+                <li>Arraste o botão "SIGAA LIVRE" para a barra de favoritos do seu navegador.</li>
+                <li>Acesse o SIGAA da UFC, <a href="https://si3.ufc.br/sigaa/verTelaLogin.do" target="_blank">https://si3.ufc.br/sigaa/verTelaLogin.do</a></li>
+                <li>Caso você já esteja no SIGAA (UFC), ao clicar no link na barra dos seus favoritos, os campos de usuário e senha serão desbloqueados instantânemanete.</li>
+            </ol>
+            <p>Caso você esteja em algum outro o site, o link sevirá para redirecionar para a página de login do SIGAA (UFC), bastando apenas, clicar novamente no link para desbloquear os campos de usuário e senha.</p>
+        </article>
+        <footer>
+            <a href="https://github.com/falmeidaco/sigaalivre" target="_blank">Sobre</a>
+        </footer>
+    </main>
+</body>
+
+</html>
